@@ -1,0 +1,51 @@
+<!-- HTML mais simples possível -->
+<html>
+    <h1> Olá mundo </h1>
+    
+    <button id="primeiroBotao">Clique aqui</button>
+
+    <div>Bloco de Divisão</div>
+
+    <h1> Outro Título ... </h1>
+
+    <p> Meu primeiro site </p>
+    <p> Outro paragrafo </p>
+</html>
+
+<!-- CSS Mais simples possível -->
+<style>
+    h1 {
+        color: blue;
+    }
+
+    p {
+        color: red;
+    }
+
+    #primeiroBotao { 
+        background-color: bisque;
+        border-radius: 20px;
+    }
+</style>
+
+<!-- JavaScript mais simples possível -->
+<script>
+    // Disparando uma mensagem no terminal (console) do navegador
+    console.log("Olá Mundo Javascript!")
+
+    // Criando uma variavel vazia
+    let botao;
+
+    // Indo no HTML com o document, pegando o elemento pelo id "primeiroBotao" e guardando na variavel
+    botao = document.getElementById("primeiroBotao")
+
+    // Adicionando o Evento click ao botão, e informando que, ao executar esse evento, dispara a função criada
+    // Também pode ser feito com o onClick, diretamente no HTML
+    botao.addEventListener("click", minhaFuncao)
+
+    // Função para ser executada (bloco de código para ser disparado no disparar de evento do botão)
+    function minhaFuncao() {
+        alert("teste")
+    }
+</script>
+
